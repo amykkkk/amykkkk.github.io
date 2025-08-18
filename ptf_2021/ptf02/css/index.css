@@ -1,0 +1,347 @@
+
+header {background:#fff;position:relative;}
+header>div {width:1200px;margin:0 auto;padding:0 15px;}
+header>div:after {content:"";display:block;clear:both;}
+header h1 {float:left;width:20%;line-height:80px;}
+header nav {float:left;width:60%;}
+header nav>ul:after {content:"";display:block;clear:both;}
+header nav>ul {padding:0 100px;}
+header nav>ul>li {float:left;width:25%;} 
+header nav>ul>li>a {display:block;line-height:80px;font-weight:500;text-align:center;}
+header .login-menu {float:right;line-height:80px;position:relative;}
+header .login-menu>a {margin-left:10px;font-size:14px;font-weight:500;color:#253d8f;}
+header .login-menu>i {margin-left:10px;font-size:14px;font-weight:500;color:#253d8f;cursor:pointer;}
+
+.login-menu.on form {height:80px;border-top:1px solid #666;}
+.login-menu form {position:absolute;top:80px;right:-25px;width:300px;height:0;overflow:hidden;background:#fff;padding:0 20px;box-shadow:2px 2px #666;transition:1s;z-index:999;}
+.login-menu input {border:none;border-bottom:1px solid #253d8f;}
+.login-menu button {color:#253d8f;position:absolute;bottom:25px;right:20px;}
+
+/*다단메뉴*/
+nav div {position:absolute;top:80px;left:0;width:100%;background:#fff;border-top:1px solid #ddd;transition:0.5s;z-index:999;height:0;}
+nav .mega-menu {width:1200px;margin:0 auto;padding:0 15px;overflow:hidden;height:0;transition:0.5s}
+nav .mega-menu:after {content:"";display:block;clear:both;}
+nav .mega-menu>li:after {content:"";display:block;width:1px;height:500px;background:#ddd;position:absolute;top:0;left:0;}
+nav .mega-menu>li:first-child:after {display:none;}
+nav .mega-menu>li {float:left;width:25%;padding:30px;position:relative;}
+nav .mega-menu>li>a {display:block;padding-bottom:20px;font-weight:500;}
+.mega-menu .menu-list {font-size:14px;font-weight:300;}
+.mega-menu .menu-list>li {padding-bottom:10px;}
+.menu-list .list-title {margin:20px 0;font-weight:500;font-size:16px;}
+nav>ul>li:hover div {height:auto;top:80px}
+nav>ul>li:hover .mega-menu {height:auto;}
+
+
+
+/*mian-visual*/
+#main-visual .main-slide img {width:100%;}
+.main-slide figure {position: relative;}
+.main-slide .text {width:1200px;position:absolute;top:80px;left:50%;transform:translateX(-50%);padding-left:15px;color:#fff;}
+.main-slide .text h2 {font-size:30px;padding-bottom:10px;font-weight:700;text-shadow:1px 1px 1px #333;}
+.main-slide .text p {font-size:20px;}
+.main-slide .text a {font-size:20px;display:block;margin-top:30px;background:#666;width:150px;line-height:30px;text-align: center;color:#ddd;font-size:16px;}
+
+/*메인비주얼 - 빠른 검색창*/
+#main-visual {position: relative;}
+#main-visual .qucik-search {width:600px;height:480px;border-radius:0 0 100px 0;background:rgba(37,61,143,0.7);position:absolute;top:50px;right:0;}
+.qucik-search>div {width:400px;height:480px;background:#fff;box-shadow:2px 2px 2px #666;}
+.qucik-search>div .title {background:#253d8f;text-align:center;color:#fff;line-height:50px;}
+.qucik-search>div .title a {padding-left:50px;}
+
+.qucik-search>div .destination {text-align:center;font-size:18px;border-bottom:1px solid #ddd;height:100px;width:300px;margin:0 auto 50px auto;padding-top:30px;}
+.qucik-search>div .destination>a {float:left;width:33.333333%;}
+.qucik-search>div .destination h3 {font-size:30px;font-weight:700;}
+.qucik-search>div .destination p {font-size:14px;}
+.qucik-search>div .destination i {font-size:30px;}
+
+.qucik-search .search>a {border-bottom:1px solid #666;width:300px;display:block;margin:30px 50px;padding:0 0 5px 5px;font-size:14px;color:#666;}
+.qucik-search .search:after {content:"";display:block;clear:both;}
+.qucik-search .search i {float:right;font-size:18px;}
+.qucik-search .search>div {margin:80px 50px 0 50px;}
+.qucik-search .search>div span {float:left;border:1px solid #ddd;width:20px;height:20px;margin-top:10px;}
+.qucik-search .search>div p {float:left;line-height:40px;margin-left:10px;color:#666;font-size:12px;}
+.qucik-search .search>div a {float:right;background:#118fe4;border-radius:15px 0;padding:5px;line-height:30px;}
+
+/*메인비주얼 - 아이콘 메뉴*/
+#main-visual .icon-menu {text-align:center;}
+#main-visual .icon-menu a {display:inline-block;padding:50px;}
+#main-visual .icon-menu p {display:inline-block;font-size:14px;font-weight:500;padding:0 0 0 10px;vertical-align:middle;}
+
+
+
+/*이벤트 - 여행 상품*/
+#event {padding:100px 0;}
+#event h2 {width:1200px;margin:0 auto;padding:0 15px;font-size:20px;font-weight:500;}
+#event>div {background:#f3f4f8;margin-top:100px;height:500px;position:relative;}
+#event .event-slide {width:1200px;margin:0 auto;padding:0 15px;transform:translateY(-70px);}
+#event .event-slide figure {width:300px;position:relative;}
+#event .event-slide img {width:100%;}
+#event .event-slide .text {position:absolute;top:30px;left:30px;padding-right:30px;}
+#event .event-slide .text h3 {font-weight:700;height:50px;}
+#event .event-slide .text p {font-size:12px;padding:0 0 15px 0;}
+#event .event-slide .text span {font-size:16px;font-weight:500;color:#253d8f;}
+
+#event i {position:absolute;top:20%;color:#666;font-size:40px;cursor:pointer;}
+#event .xi-angle-left-min {left:300px;}
+#event .xi-angle-right-min {right:300px;}
+
+#event .event-banner {width:1200px;margin:0 auto;padding:0 15px;}
+#event .event-banner>div {float:left;width:48%;background:#fff;height:100px;padding:25px 30px;position: relative;top:-20px;}
+#event .event-banner>div:first-child {margin-right:45px;}
+#event .event-banner p {font-weight:500;}
+#event .event-banner span {font-size:12px;font-weight:300;line-height:2;}
+#event .event-banner i {position:absolute;top:30%;right:30px;font-size:16px;color:#ddd;}
+
+
+/*covid - app 배너*/
+#banner>a {display:block;width:1200px;margin:0 auto;padding:0 15px;position: relative;}
+#banner>a img {width:100%;}
+#banner .text {position:absolute;top:40px;left:45px;}
+#banner .text h3 {font-size:18px;font-weight:500;}
+#banner .text p {font-size:14px;font-weight:300;padding-top:10px;}
+
+#banner .app-wrap>div {float:left;margin-top:200px;height:200px;}
+#banner .app-picture {width:50%;background:#dcf6fd;border-radius:0 0 100px 0;}
+#banner .app-picture figure {width:550px;float:right;margin-right:35px;transform:translateY(-100px);}
+#banner .app-picture img {width:100%;}
+
+#banner .app-info {width:600px;padding-left:65px;}
+#banner .app-info h3 {font-size:18px;font-weight:500;}
+#banner .app-info p {font-size:14px;font-weight:300;width:300px;line-height:1.2;padding:20px 0 50px 0;}
+#banner .app-info a {font-size:12px;font-weight:500;color:#253d8f;}
+
+
+
+/*아이콘 */
+#icon {padding:100px 0;}
+#icon>div {width:1200px;margin:0 auto;padding:0 15px;}
+#icon h3 {font-size:20px;font-weight:500;padding-bottom:30px;}
+#icon .icon-wrap {border:1px solid #888;height:120px;}
+#icon .icon-wrap>a {float:left;width:16.66667%;text-align:center;padding-top:30px;position:relative;}
+#icon .icon-wrap>a:after {content:"";display:block;width:1px;height:50px;background:#ddd;transform: translateY(-50%);position:absolute;top:60%;right:0;}
+#icon .icon-wrap img {width:35px;}
+#icon .icon-wrap p {padding-top:10px;font-size:14px;font-weight:500;}
+
+
+
+/*footer-menu*/
+footer .footer-menu {padding:50px 0;background:#f3f4f8;}
+footer .footer-wrap {width:1200px;margin:0 auto;padding:0 15px;}
+footer .footer-wrap dl {float:left;padding-right:80px;}
+footer .footer-wrap dt {font-size:14px;font-weight:300;padding-bottom:10px;}
+footer .footer-wrap dd {font-size:12px;font-weight:100;line-height:1.5;}
+footer .footer-wrap .sns {float:right;}
+footer .footer-wrap .sns i {font-size:20px;color:#888;padding-left:10px;}
+
+/*footer-language*/
+footer .footer-country {border:1px solid #ddd;}
+.country-wrap {width:1200px;margin:0 auto;padding:0 15px;font-size:12px;font-weight:500;}
+.country-wrap>a {padding:15px;line-height:50px;}
+.country-wrap dl {display:inline-block;position: relative;}
+.country-wrap dt {line-height:50px;}
+.country-wrap dd a {display:block;}
+.country-wrap dl>div {position:absolute;bottom:50px;left:0;height:0;width:100%;overflow:hidden;line-height:1.5;background:#fff;text-align:center;font-weight:300;transition:1s;}
+.country-wrap dl>div.on {height:220px;border:1px solid #ddd;padding-top:20px;}
+.country-wrap dd:hover {background:#333;color:#fff;}
+
+/*footer-copyright*/
+footer .copyright {width:1200px;margin:0 auto;padding:30px 15px;font-size:12px;font-weight:300;color:#666;}
+.copyright ul {width:800px;padding-bottom:15px;}
+.copyright ul li {display:inline-block;padding-right:20px;position:relative;line-height:1.5;}
+.copyright ul li:after {content:"";display:block;width:1px;height:10px;background:#ddd;position:absolute;top:30%;right:5px}
+.copyright ul li:first-child {color:#253d8f;font-weight:500;}
+.copyright ul li:nth-child(4):after {display:none;}
+.copyright ul li:last-child:after {display:none;}
+
+.mopen {display:none;position:fixed;top:30px;right:30px;width:30px;height:30px;border-radius:50%;background:rgba(17, 143, 228,0.5);z-index:999;}
+.mopen span {display:block;width:20px;height:1px;background:#fff;position:absolute;left:5px;}
+.mopen span:nth-child(1) {top:8px;}
+.mopen span:nth-child(2) {top:15px;}
+.mopen span:nth-child(3) {top:15px;}
+.mopen span:nth-child(4) {bottom:8px;}
+
+.mopen.on span:nth-child(1) {display:none;top:8px;}
+.mopen.on span:nth-child(2) {top:15px;transform:rotate(-45deg);}
+.mopen.on span:nth-child(3) {top:15px;transform:rotate(45deg);}
+.mopen.on span:nth-child(4) {display:none;bottom:8px;}
+
+
+@media (max-width:768px){
+
+    header {background:#fff;position:relative;}
+    header>div {width:100%;margin:0 auto;padding:0;}
+    header>div:after {content:"";display:block;clear:both;}
+    header h1 {float:none;width:100%;line-height:50px;height:50px;overflow:hidden;text-align:center;}
+    header h1 a {display:inline-block;line-height:50px;}
+    header h1 img {width:100%;transform:translateY(-5px);}
+
+    header nav {float:left;width:100%;position:fixed;top:0;left:-100%;width:100%;height:100vh;background:#fff;transition:1s;z-index:999;-webkit-transform:translateZ(0)}
+
+    header nav::before{content:"";display:block;background:url(../img/logo-koreanair.png)no-repeat center center ;background-size:100%;width:150px;height:30px;margin:30px auto 0 auto;}
+    header nav::after{content:"1997-2021 KOREAN AIR";display:block;background:url(../img/logo-skyteam.png)no-repeat center left ;width:200px;height:30px;position:absolute;bottom:20px;left:20px;padding:10px 0 0 40px;font-size:12px;color:#ddd;}
+    header nav.on {left:0;}
+    header nav>ul:after {content:"";display:block;clear:both;}
+    header nav>ul {padding:10px 30px;}
+    header nav>ul>li {float:left;width:100%;} 
+    header nav>ul>li>a {display:block;line-height:30px;font-weight:500;text-align:left;}
+    
+    header .login-menu {float:none;width:100%;line-height:40px;height:40px;overflow:hidden;position:relative;text-align:center;border-top:1px solid #253d8f;}
+    header .login-menu>a {display:inline-block;margin-left:0;font-size:14px;font-weight:500;color:#253d8f;}
+    header .login-menu>a i {font-size:16px;}
+    header .login-menu>i {display:none;margin-left:0;font-size:14px;font-weight:500;color:#253d8f;cursor:pointer;}
+
+    .login-menu.on form {height:0;border-top:none;}
+    .login-menu form {display:inline-block;position:static;top:0;right:0;width:200px;height:40px;overflow:hidden;background:#fff;padding:0;box-shadow:none;font-size:14px;transition:1s;z-index:999;vertical-align:top;}
+    .login-menu input {width:150px;height:30px;border:none;border-bottom:1px solid #253d8f;padding:0;vertical-align:top;-webkit-appearance:none;-webkit-border-radius:0;}
+    .login-menu button {padding:0;color:#253d8f;position:static;bottom:0;right:0;}
+
+    /*다단메뉴*/
+    nav>ul>li div {position:static;top:80px;left:0;width:100%;height:0;overflow:hidden;background:#f2f2f2;border-top:1px solid #ddd;transition:0.5s;z-index:999;}
+    nav>ul>li:hover div {height:200px;top:0}
+    nav>ul>li.on div {height:200px;}
+
+    nav>ul>li:hover .mega-menu {width:100%;height:200px;}
+    nav .mega-menu {width:100%;margin:0 auto;padding:20px 0;overflow:hidden;height:200px;transition:0.5s;position:relative;}
+    nav .mega-menu:after {content:"";display:block;clear:both;}
+    nav .mega-menu>li:after {content:"";display:none;width:1px;height:500px;background:#ddd;position:static;top:0;left:0;}
+    nav .mega-menu>li:first-child:after {display:none;}
+    nav .mega-menu>li {float:none;width:150px;padding:0 20px;position:static;}
+    nav .mega-menu>li:last-child {display:none;}
+    nav .mega-menu>li>a {display:block;padding-bottom:0;font-size:14px;font-weight:500;line-height:30px;;position:relative;}
+    nav .mega-menu>li>a:after {content:"\e93f";font-family: xeicon!important;display:block;position:absolute;top:0;left:110px;}
+    .mega-menu .menu-list {position:absolute;top:0;left:150px;width:0;height:200px;overflow:hidden;font-size:12px;font-weight:300;padding:0;background:#fff;}
+    .mega-menu>li.on {background:#fff;}
+    .mega-menu>li.on .menu-list {width:calc(100% - 150px);padding:15px;transition:1s;}
+    .mega-menu .menu-list>li {padding-bottom:0;line-height:1.5;}
+    .menu-list .list-title {margin:5px 0 0 0;font-weight:500;font-size:14px;line-height:0;border-top:1px dashed #ddd;}
+ 
+
+
+
+    /*mian-visual*/
+    #main-visual .main-slide img {width:200%;height:100%;}
+    .main-slide figure {position:relative;width:100%;height:200px;}
+    .main-slide .text {width:100%;position:absolute;top:40px;left:40px;transform:translateX(0);padding-left:0;color:#fff;}
+    .main-slide .text h2 {font-size:20px;padding-bottom:10px;font-weight:500;text-shadow:1px 1px 1px #333;}
+    .main-slide .text p {font-size:14px;}
+    .main-slide .text a {font-size:12px;display:block;margin-top:30px;background:#666;width:100px;line-height:20px;text-align:center;color:#ddd;}
+
+    /*메인비주얼 - 빠른 검색창*/
+    #main-visual {position:relative;}
+    #main-visual .qucik-search {width:300px;height:300px;overflow:hidden;border-radius:0 0 30px 0;background:rgba(37,61,143,0.7);position:static;top:200px;right:50%;margin:10px auto;border:none;}
+    .qucik-search>div {width:280px;height:280px;background:#fff;box-shadow:3px 3px 3px #333;border:1px solid #333}
+    .qucik-search>div .title {background:#253d8f;text-align:center;color:#fff;line-height:30px;}
+    .qucik-search>div .title a {display:inline-block;padding-left:0;width:60px;font-size:14px;}
+
+    .qucik-search>div .destination {text-align:center;font-size:14px;border-bottom:1px solid #ddd;height:70px;width:100%;margin:0 auto 0 auto;padding-top:20px;}
+    .qucik-search>div .destination>a {float:left;width:33.333333%;}
+    .qucik-search>div .destination h3 {font-size:20px;font-weight:700;}
+    .qucik-search>div .destination p {font-size:12px;}
+    .qucik-search>div .destination i {font-size:20px;}
+
+    .qucik-search .search>a {border-bottom:1px solid #666;width:200px;display:block;margin:15px auto;padding:0 0 5px 5px;font-size:12px;color:#666;}
+    .qucik-search .search:after {content:"";display:block;clear:both;}
+    .qucik-search .search i {float:right;font-size:16px;}
+    .qucik-search .search>div {margin:10px auto 0 auto;width:130px;}
+    .qucik-search .search>div span {float:left;border:1px solid #ddd;width:15px;height:15px;margin-top:5px;}
+    .qucik-search .search>div p {float:left;line-height:25px;margin:0 5px;color:#666;font-size:12px;}
+    .qucik-search .search>div a {display:block;float:left;width:25px;height:25px;background:#118fe4;border-radius:10px 0;padding:0;line-height:0;}
+    .qucik-search .search>div a img {width:100%;}
+
+    /*메인비주얼 - 아이콘 메뉴*/
+    #main-visual .icon-menu {text-align:center;width:100%;line-height:50px;margin-top:0px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+    #main-visual .icon-menu a {display:inline-block;padding:0;width:100px;}
+    #main-visual .icon-menu a img {width:30px;}
+    #main-visual .icon-menu p {display:inline-block;font-size:12px;font-weight:500;padding:0 0 0 0;vertical-align:middle;}
+
+
+
+    /*이벤트 - 여행 상품*/
+    #event {padding:100px 0 50px 0;}
+    #event h2 {width:100%;margin:0 auto;padding:0;font-size:18px;font-weight:500;text-align:center;}
+    #event>div {background:#f3f4f8;margin-top:100px;height:400px;position:relative;}
+    #event .event-slide {width:100%;margin:0 auto;padding:0 15px;transform:translateY(-70px);}
+    #event .event-slide figure {width:100%;position:relative;padding:0 50px;}
+    #event .event-slide img {width:100%;}
+    #event .event-slide .text {position:absolute;top:30px;left:45%;transform:translateX(-50%);padding-right:0;}
+    #event .event-slide .text h3 {font-weight:700;height:30px;}
+    #event .event-slide .text p {font-size:12px;padding:0 0 15px 0;}
+    #event .event-slide .text span {font-size:14px;font-weight:500;color:#253d8f;}
+
+    #event i {position:absolute;top:20%;color:#666;font-size:30px;cursor:pointer;}
+    #event .xi-angle-left-min {left:20px;}
+    #event .xi-angle-right-min {right:20px;}
+
+    #event .event-banner {width:100%;margin:0 auto;padding:0 15px;}
+    #event .event-banner>div {float:left;width:48%;background:#fff;height:70px;padding:10px;position:relative;top:-50px;}
+    #event .event-banner>div:first-child {margin-right:10px;}
+    #event .event-banner p {font-weight:500;font-size:14px;}
+    #event .event-banner span {font-size:10px;font-weight:100;line-height:0;}
+    #event .event-banner i {position:absolute;top:8px;right:10px;font-size:16px;color:#ddd;}
+
+
+    /*covid - app 배너*/
+    #banner>a {display:block;width:100%;overflow:hidden;margin:0 auto 10px auto;padding:0 15px;position:relative;}
+    #banner>a img {width:unset;height:100%;transform:translateX(-60%);}
+    #banner .text {position:absolute;top:50%;left:0;transform:translateY(-50%);padding:0 80px;text-align:center;}
+    #banner .text h3 {font-size:16px;font-weight:500;}
+    #banner .text p {font-size:12px;font-weight:100;padding-top:10px;}
+
+    #banner .app-wrap>div {float:none;margin-top:0;height:auto;}
+    #banner .app-picture {width:100%;background:none;border-radius:0 0 0 0;}
+    #banner .app-picture figure {width:100%;float:right;margin-right:0;transform:translateY(0);}
+    #banner .app-picture img {width:100%;}
+
+    #banner .app-info {width:100%;height:100px;padding:20px;background:#dcf6fd;border-radius:0 0 50px 0;}
+    #banner .app-info h3 {font-size:16px;font-weight:500;}
+    #banner .app-info p {font-size:12px;font-weight:100;width:100%;line-height:1.2;padding:15px 0 30px 0;margin:0;}
+    #banner .app-info a {font-size:12px;font-weight:500;color:#253d8f;}
+
+
+
+    /*아이콘 */
+    #icon {padding:50px 0;}
+    #icon>div {width:100%;margin:0 auto;padding:0 15px;}
+    #icon h3 {font-size:18px;font-weight:500;padding-bottom:20px;}
+    #icon .icon-wrap {border:1px solid #888;height:110px;}
+    #icon .icon-wrap>a {float:left;width:33.33333%;text-align:center;padding:5px 0;position:relative;border:1px solid #888;}
+    #icon .icon-wrap>a:after {content:"";display:none;width:1px;height:30px;background:#ddd;transform: translateY(-50%);position:absolute;top:50%;right:0;}
+    #icon .icon-wrap img {width:25px;}
+    #icon .icon-wrap p {padding-top:5px;font-size:12px;font-weight:300;}
+
+
+
+    /*footer-menu*/
+    footer .footer-menu {padding:30px 0;background:#f3f4f8;}
+    footer .footer-wrap {width:100%;margin:0 auto;padding:0 20px;}
+    footer .footer-wrap dl {float:left;width:33.3333%;padding:0 0 20px 0;}
+    footer .footer-wrap dt {font-size:14px;font-weight:400;padding-bottom:10px;}
+    footer .footer-wrap dd {font-size:12px;font-weight:100;line-height:1.5;}
+    footer .footer-wrap .sns {float:none;}
+    footer .footer-wrap .sns i {font-size:20px;color:#888;padding:0 10px 0 0;}
+
+    /*footer-language*/
+    footer .footer-country {border:1px solid #ddd;}
+    .country-wrap {width:100%;margin:0 auto;padding:0 30px;font-size:12px;font-weight:500;}
+    .country-wrap>a {padding:0 15px;line-height:40px;}
+    .country-wrap dl {display:inline-block;position: relative;}
+    .country-wrap dt {line-height:40px;}
+    .country-wrap dd a {display:block;}
+    .country-wrap dl>div {position:absolute;bottom:40px;left:-20px;height:0;width:90px;overflow:hidden;line-height:1.5;background:#fff;text-align:center;font-weight:300;transition:1s;}
+    .country-wrap dl>div.on {height:200px;border:1px solid #ddd;padding-top:10px;}
+    .country-wrap dd:hover {background:#333;color:#fff;}
+
+    /*footer-copyright*/
+    footer .copyright {width:100%;margin:0 auto;padding: 15px;font-size:12px;font-weight:300;color:#666;}
+    .copyright ul {width:100%;padding-bottom:15px;}
+    .copyright ul li {display:inline-block;padding-right:15px;position:relative;line-height:1.5;}
+    .copyright ul li:after {content:"";display:block;width:1px;height:10px;background:#ddd;position:absolute;top:30%;right:5px}
+    .copyright ul li:first-child {color:#253d8f;font-weight:500;}
+    .copyright ul li:nth-child(2):after {display:none;}
+    .copyright ul li:nth-child(4):after {display:none;}
+    .copyright ul li:last-child:after {display:none;}
+
+    .mopen {display:block;}
+
+}
+

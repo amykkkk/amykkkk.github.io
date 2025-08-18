@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+ :after,:before,*{box-sizing:border-box;}
+
+.parallax_slide1 .swiper-container{position:absolute;width:100%;height:100%;left:0;top:0;}
+.parallax_slide1 .vis_wrap{width:100%;height:100vh;display: -webkit-box; display: -ms-flexbox;display:flex;position:relative;z-index:0;-webkit-transition:all .4s ease; -o-transition: all .4s ease;transition:all .4s ease;}
+.parallax_slide1 .vis_wrap .swiper-slide{overflow:hidden;color:#fff;}
+.parallax_slide1 .vis_wrap .swiper-container{width:100%;height:100%;position:absolute;left:0;top:0;}
+.parallax_slide1 .vis .bg{width:100%;height:100%;position:absolute;left:0;top:0;display: -webkit-box; display: -ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background:url("../img/vis1.jpg") no-repeat center/cover;}
+.parallax_slide1 .vis2 .bg{background:url("../img/vis2.jpg") no-repeat center/cover;}
+.parallax_slide1 .vis3 .bg{background:url("../img/vis3.jpg") no-repeat center/cover;}
+.parallax_slide1 .vis .txt{position:absolute;color:#fff;width:97%;max-width: 1200px;left: 50%;transform: translateX(-50%) !important;z-index:1;}
+.parallax_slide1 .vis .txt .tit{font-size:60px;font-weight:600;margin-bottom:10px;}
+.parallax_slide1 .vis_wrap .swiper-button-prev,.parallax_slide1 .vis_wrap .swiper-button-next{width:55px;height:55px;line-height:53px;margin-top:-30px;text-align:center;border:2px solid #d4d3d3;border-radius:55px;opacity:0;visibility:hidden;-webkit-transition:all .3s ease; -o-transition: all .3s ease;transition:all .3s ease;-webkit-background-size:10px;background-size:10px;}
+.parallax_slide1 .vis_wrap:hover .swiper-button-prev,.parallax_slide1 .vis_wrap:hover .swiper-button-next{transform:translateX(0);opacity:1;visibility:visible;}
+.parallax_slide1 .vis_wrap .swiper-button-prev{left:25px;transform:translateX(50px);}
+.parallax_slide1 .vis_wrap .swiper-button-next{right:25px;transform:translateX(-50px);}
+.parallax_slide1 .txt{max-width:1500px;width:97%;position:relative;margin:0 auto;}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+/*js가 자동으로 만드는 태그의 css입니다 굳이 수정하지 마세요*/
+.prx_banner .parallax-item {width: 100%; position: relative; z-index: 0;}
+.prx_banner .bg-wrap {clip: rect(0, auto, auto, 0); position: absolute; top:0; left:0;   right:0;  bottom:0;}
+.prx_banner .bg { position: fixed; display: block; top:0;  left:0; right:0;  bottom:0;  background-size: cover; background-position: center center;}
+.prx_banner .parallax-item[data-title] .bg{opacity:.5}
+.prx_banner .parallax-item[data-title] {background:#000}
+/*js가 자동으로 만드는 태그의 css입니다 굳이 수정하지 마세요*/
+
+
+.prx_banner .ct_wrap {position: relative; z-index: 1; padding: 100px 0; color: #fff;}
+.prx_banner .txt_wrap {font-size: 30px;color: #fff;margin-bottom: 50px;border-left: 2px solid #0e417d;padding: 0 0 5px 15px;}
+.prx_banner .txt_wrap .ti {margin-bottom: 15px;}
+.prx_banner .about_btn {width: 358px; height: 48px; line-height: 48px; color:#fff; font-size: 18px; display: inline-block; text-align: center; transition: all .3s ease; box-sizing: border-box; border: 1px solid #fff; position: relative; max-width: 100%;}
+.prx_banner .about_btn:hover {border-color: #0e417d; background-color: #0e417d;}
+
+
+@media screen and (max-width:500px){
+.prx_banner .ct_wrap{padding: 70px 0; }
+.prx_banner .txt_wrap {margin-bottom: 30px;font-size: 20px;}
+.prx_banner .txt_wrap .ti {margin-bottom: 10px;}
+}
+

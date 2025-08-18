@@ -1,0 +1,73 @@
+@charset "UTF-8";
+.parallax_slide2 .vis_wrap { width: 100%; height: 100vh; position: relative;}
+
+    .parallax_slide2 .vis_wrap .mask_box { position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
+
+    .parallax_slide2 .vis_wrap .vis {background-color: #000; position: relative;}
+
+    .parallax_slide2 .vis_wrap .vis .mask { position: absolute; width: 0%; height: 100%; top: 0; overflow: hidden;}
+    .parallax_slide2 .vis_wrap .vis .mask span { display: block; width: 100vw; height: 100%; position: absolute; top: 0; right: 0%; }
+    
+    .parallax_slide2 .vis_wrap .vis1 .mask span { background: url("/resources/img/parallax/vis1.jpg")no-repeat left center/cover;}
+    .parallax_slide2 .vis_wrap .vis2 .mask span { background: url("/resources/img/parallax/vis2.jpg")no-repeat left center/cover;}
+    .parallax_slide2 .vis_wrap .vis3 .mask span { background: url("/resources/img/parallax/vis3.jpg")no-repeat left center/cover;}
+
+    .parallax_slide2 .vis_wrap .vis .mask_a { right: 75%; transition: all .4s ease-in-out .3s;}
+    .parallax_slide2 .vis_wrap .vis .mask_b { right: 50%; transition: all .4s ease-in-out .5s;}
+    .parallax_slide2 .vis_wrap .vis .mask_c { right: 25%; transition: all .4s ease-in-out .7s;}
+    .parallax_slide2 .vis_wrap .vis .mask_d { right: 0%; transition: all .4s ease-in-out .9s;}
+
+    .parallax_slide2 .vis_wrap .vis .mask_a span { transform: translateX(75%);} 
+    .parallax_slide2 .vis_wrap .vis .mask_b span { transform: translateX(50%);}
+    .parallax_slide2 .vis_wrap .vis .mask_c span { transform: translateX(25%);}
+    .parallax_slide2 .vis_wrap .vis .mask_d span { transform: translateX(0%);}
+
+    .parallax_slide2 .vis_wrap .vis.swiper-slide-active .mask {  width: 25.1%;}/*크롬에서 1픽셀 차이로 선생겨서 0.1% 넣어놓음*/
+    
+  .parallax_slide2 .vis_wrap .swiper-container .vis.swiper-slide-active .mask_box{transform: scale(1); animation-name: zoomIn; animation-duration:4s; animation-fill-mode: forwards;}
+    .parallax_slide2 .vis_wrap .swiper-container .vis.swiper-slide .mask_box{  transform: scale(1.1); }
+
+    .parallax_slide2 .swiper-container { width: 100%; height: 100%;}
+ 
+    .parallax_slide2 .vis_wrap .inner {  height: auto;}
+
+    .parallax_slide2 .vis_wrap .ment { position: absolute; width: 100%; height: 100%; z-index: 1; text-align: center; color: #fff; display: -webkit-box; display: -ms-flexbox;  display: flex; -webkit-box-align: center; -ms-flex-align: center;  align-items: center; }
+
+    .parallax_slide2 .vis_wrap .ment .tit { font-size: 60px; font-weight: 600;}
+    .parallax_slide2 .vis_wrap .ment .txt { margin-top: 10px;}
+
+
+    /*slide btn style*/
+
+    .parallax_slide2 .vis_wrap .swiper-button-prev,
+    .parallax_slide2 .vis_wrap .swiper-button-next {
+        width: 55px;
+        height: 55px;
+        line-height: 53px;
+        margin-top: -30px;
+        text-align: center;
+        border: 2px solid #d4d3d3;
+        border-radius: 55px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease;
+        -webkit-background-size: 10px;
+        background-size: 10px;
+    }
+
+    .parallax_slide2 .vis_wrap:hover .swiper-button-prev,
+    .parallax_slide2 .vis_wrap:hover .swiper-button-next {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .parallax_slide2 .vis_wrap .swiper-button-prev {
+        left: 25px;
+        transform: translateX(50px);
+    }
+
+    .parallax_slide2 .vis_wrap .swiper-button-next {
+        right: 25px;
+        transform: translateX(-50px);
+    }

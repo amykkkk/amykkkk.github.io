@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CJ ENM</title>
+
+    <meta name="robots" content="index,follow">
+    <meta name="cj enm" content="cj enm">
+    <meta name="description" content="cj enm">
+    <meta property="og:type" content="website"> 
+	<meta property="og:title" content="cj enm">
+	<meta property="og:description" content="cj enm">
+    <meta property="og:url" content="http://amyk.pe.kr/ptf00">
+
+    <link rel="shortcut icon" href="./img/Favicon.ico" >
+	<link rel="canonical" href="http://amyk.pe.kr/ptf00">
+
+    <!--공통 스타일-->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="../resources/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/common2.css">
+    <!--메인(index) 스타일-->
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <!--jquery / jquery ui 필수-->
+    <script src="../resources/js/jquery.1.11.3.min.js"></script>
+    <script src="../resources/js/jquery-ui-1.11.4.min.js"></script>
+    <script src="../resources/js/slick.1.8.1.js"></script>
+    <script src="../resources/js/slick-animation.min.js"></script>
+    <script src="../resources/js/swiper.min.js"></script>
+    <script async="" src="../resources/js/jquery.easing.min.js"></script>
+    <script defer="" src="../resources/js/wow.min.js"></script>
+    <script defer="" src="../resources/js/common.js"></script>
+
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div id="container" class="main">
+        <!--header s-->
+        <!--include s-->
+        <link rel="stylesheet" type="text/css" href="./css/alldrop1.css">
+        <script defer="" src="./js/alldrop1.js"></script>
+        <!--include e-->
+        <header class="header" id="header">
+            <!-- ham_btn -->
+            <div class="ham_btn wow fadeInDown" data-wow-duration=".8s" data-wow-delay="0.3s">
+                <div class="hamburger__container">
+                  <div class="hamburger__inner"></div>
+                  <div class="hamburger__hidden"></div>
+                </div>
+            </div>
+            <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+            <script id="rendered-js">
+                /* document.querySelector('.ham_btn').addEventListener('click', e => {
+                    e.currentTarget.classList.toggle('is-active');
+                }); */
+    
+                $('.ham_btn').click(function(e){
+                    e.preventDefault();
+                    $(this).toggleClass('is-active');
+                });
+    
+                
+            </script>
+            <!-- header menu -->
+            <div class="head clear wow fadeInDown "><!-- active, scroll로 컨트롤 -->
+                <div class="h_inner">
+                    <!-- logo -->
+                    <h1 class="logo">
+                        <a href="/">
+                            <img class="logo_w" src="./img/cj_enm_logo.svg" alt="로고">
+                        </a>
+                    </h1>
+                    <!-- gnb -->
+                    <div class="gnb_wrap clear">
+                        <nav class="gnb">
+                            <ul>
+                                <li><a href="#none">#1stLook</a></li>
+                                <li><a href="#none">About Us</a></li>
+                                <li><a href="#none">Featured Contents</a></li>
+                                <li><a href="#none">Newsroom</a></li>
+                                <li><a href="#none">Support</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- mobile -->
+            <div class="mobile_menu">
+                <!-- mobile gnb -->
+                <div class="menu_wrap clear">
+                    <nav class="gnb">
+                        <ul>
+                            <li><a href="#none">#1stLook</a></li>
+                            <li><a href="#none">About Us</a></li>
+                            <li><a href="#none">Featured Contents</a></li>
+                            <li><a href="#none">Newsroom</a></li>
+                            <li><a href="#none">Support</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--sns_box s-->
+                <div class="sns_box">
+                    <div class="sns insta">
+                        <a href="#none" target="_blank">
+                            <img src="./img/ham_insta.png" title="새창열기" alt="인스타그램" class="sns_img">
+                            <img src="./img/ham_insta_w.png" title="새창열기" alt="인스타그램" class="sns_hover">
+                        </a>
+                    </div>
+                    <div class="sns youtube">
+                        <a href="#none" target="_blank">
+                            <img src="./img/ham_youtube.png" title="새창열기" alt="유튜브" class="sns_img">
+                            <img src="./img/ham_youtube_w.png" title="새창열기" alt="유튜브" class="sns_hover">
+                        </a>
+                    </div>
+                </div>
+                <!--sns_box es-->
+            </div>
+        </header>
+        <!--header e-->
+        <div class="contents">            
+        
+            <!--main_vis s-->
+            <div class="main_vis_wrap">
+                <div class="main_vis_slick2">
+                    <div class="main_vis clear section" id="main_vis">
+                        <div class="lf_menu">
+                            <div class="scroll_wr">
+                                <p>scroll</p>
+                                <span class="img"></span>
+                            </div>
+                        </div>
+                        <div class="arw_wrap">
+                            <button type="button" class="slick-prev arrow arrow-prev">Prev</button>
+                            <button type="button" class="slick-next arrow arrow-next">Next</button>
+                        </div>
+                        <div id="slick_vis2">
+                            <div class="vis vis1">
+                                <div class="vis_bg">
+                                    <div class="vis_txt">
+                                        <p class="tit wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.2s">Who We Are</p>
+                                        <p class="txt">
+                                            낯선 것에서 찾아낸 공감대를 사랑하고 그 과정에서 기쁨을 느끼는 CJ ENM은, 우리만의 독창적인 것, Untold Originals를 찾아 오늘도 끝없는 여정을 이어갑니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vis vis2">
+                                <div class="vis_bg">
+                                    <div class="vis_txt">
+                                        <p class="tit wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.2s">TV Shows</p>
+                                        <p class="txt">
+                                            CJ ENM은 대한민국 최대 콘텐츠 사업자입니다. 다양한 장르의 방송 채널을 통해 공감과 재미를 전하며 K콘텐츠로 일상의 즐거움을 만들어가고 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vis vis3">
+                                <div class="vis_bg">
+                                    <div class="vis_txt">
+                                        <p class="tit wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.2s">Music</p>
+                                        <p class="txt">
+                                            CJ ENM은 음악을 통해 언어, 세대, 인종을 넘어 세상을 하나로 연결합니다. 음악을 사랑하는 팬, 아티스트와 함께 편견을 깨는 새로움, 멈출 수 없는 열광 그리고 경쟁과 연대를 통한 성장으로 전 세계에 엠넷 유니버스를 확장해가고 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vis vis4">
+                                <div class="vis_bg">
+                                    <div class="vis_txt">
+                                        <p class="tit wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.2s">Film</p>
+                                        <p class="txt">
+                                            CJ ENM은 아카데미 4관왕에 빛나는 대한민국 대표 영화 스튜디오입니다. 메가 히트의 대명사인 천만 영화를 국내 투자∙배급사 중 가장 많이 보유하고 있습니다. 국내외에서 수 백 편의 화제작들을 내놓을 뿐만 아니라 전 세계에서 300개가 넘는 수상 트로피를 받으며 한국 영화의 저력을 보여주고 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!--main_vis e-->
+                    
+            <!--main_cont s-->
+            <div class="main_cont" id="scroll_move">
+                <!--main_cont s-->
+                <!--sec1 s-->
+                <div class="sec sec1">
+                    <div class="tit_wrap">
+                        <h3 class="tit wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.4s">Featured Contents</h3>
+                    </div>
+
+                    <div class="slide_wrap wow fadeInDown" data-wow-duration=".6s" data-wow-delay="0.4s">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="show_box1 swiper-slide">
+                                    <div class="show_info">
+                                        <div class="ti_wrap">
+                                            <span class="bg"></span>
+                                            <h4 class="ti_pit">다만 악에서 구하소서</h4>
+                                        </div>
+                                        <p class="tx wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.6s">처절한 암살자 VS 무자비한 추격자. 악의 구렁텅이 속 지옥에서 멈출 수 없는 두 남자의 지독한 추격이 시작된다</p>
+                                        <div class="btn_box black wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.8s">
+                                            <a href="" class="btn_go">MORE</a>
+                                        </div>						
+                                    </div>
+                                    <div class="show_img wow fadeInDown" data-wow-duration=".6s" data-wow-delay="0.6s">
+                                        <p class="show_num wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.8s">01</p>
+                                    </div>
+                                </div> <!-- show_box1 -->
+
+                                <div class="show_box2 swiper-slide">
+                                    <div class="show_info">
+                                        <div class="ti_wrap">
+                                            <span class="bg"></span>
+                                            <h4 class="ti_pit">윤식당2</h4>
+                                        </div>
+                                        <p class="tx wow">윤식당 1호점을 성공시키고 돌아온 윤여정 대표와 식구들. 모든 것이 평화로운 스페인의 섬 한 편에 오픈한 2호점 이야기</p>
+                                        <div class="btn_box black">
+                                            <a href="" class="btn_go">MORE</a>
+                                        </div>						
+                                    </div>
+                                    <div class="show_img">
+                                        <p class="show_num">02</p>
+                                    </div>
+                                </div> <!-- show_box2 -->
+
+                                <div class="show_box3 swiper-slide">
+                                    <div class="show_info">
+                                        <div class="ti_wrap">
+                                            <span class="bg"></span>
+                                            <h4 class="ti_pit">기생충</h4>
+                                        </div>
+                                        <p class="tx">“아들아, 너는 다 계획이 있구나” 전원 무직인 네 식구. 어쩌다 발 들인 부잣집이 밥줄이 되어줄까? 완벽했던 계획이 뒤틀리며 시작되는 가족 희비극</p>
+                                        <div class="btn_box black">
+                                            <a href="" class="btn_go">MORE</a>
+                                        </div>						
+                                    </div>
+                                    <div class="show_img">
+                                        <p class="show_num">03</p>
+                                    </div>
+                                </div> <!-- show_box3 -->
+
+                                <div class="show_box4 swiper-slide">
+                                    <div class="show_info">
+                                        <div class="ti_wrap">
+                                            <span class="bg"></span>
+                                            <h4 class="ti_pit">퀸덤2</h4>
+                                        </div>
+                                        <p class="tx">다채로운 콘셉트 아래 K-Pop 대표 걸그룹 6팀의 화려한 '레전드 무대'가 쏟아지는 글로벌 동시 컴백 서바이벌 프로그램</p>
+                                        <div class="btn_box black">
+                                            <a href="" class="btn_go">MORE</a>
+                                        </div>						
+                                    </div>
+                                    <div class="show_img">
+                                        <p class="show_num">04</p>
+                                    </div>
+                                </div> <!-- show_box4 -->
+
+                                <div class="show_box5 swiper-slide">
+                                    <div class="show_info">
+                                        <div class="ti_wrap">
+                                            <span class="bg"></span>
+                                            <h4 class="ti_pit">유미의 세포들</h4>
+                                        </div>
+                                        <p class="tx">세포와 호르몬의 지배에서 벗어날 수 없는 인간 존재에 대한 유쾌한 통찰로, 세포들과 함께 먹고 사랑하고 성장하는 ‘유미’의 이야기를 그린 세포 자극 공감 로맨스</p>
+                                        <div class="btn_box black">
+                                            <a href="" class="btn_go">MORE</a>
+                                        </div>						
+                                    </div>
+                                    <div class="show_img">
+                                        <p class="show_num">05</p>
+                                    </div>
+                                </div> <!-- show_box5 -->
+                                
+
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="arw_wrap">
+                                <div class="swiper-button-next arrow arrow-prev"></div>
+                                <div class="swiper-button-prev arrow arrow-next"></div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <!--sec1 e-->
+
+                <!--sec2 s-->
+                <div class="sec2">
+                    <!--include s  ie에서만 오류 있음  -->
+                    <script src="../resources/js/parallax-scroll.jquery.js"></script> 
+                    <script src="../resources/js/prx2.js"></script>
+                    <!--include e-->
+                    <div class="prx_banner clear">
+                        <div class="parallax-item" data-image="./img/banner_bk.jpeg">
+                            <div class="inner">
+                                <div class="ct_wrap">
+                                    <div class="vis_txt">
+                                        <p class="txt wow fadeInUp" data-wow-duration=".8s" data-wow-delay="0.3s"><span class="tit">We love to find the familiar within the unfamiliar</span> and the thrill that comes with it.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--script s-->
+                    <script>
+                        parscroll(".parallax-item")
+                    </script>
+                    <!--script e-->
+
+                </div>
+                <!--sec2 e-->
+                
+                <!--sec3 s-->
+                <div class="sec sec3">
+                    <div class="inner">
+                        <div class="cont_wrap cw1">
+                            <div class="tit_wrap">
+                                <h3 class="tit wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.4s">Latest News</h3>
+                            </div>
+                            <div class="tab_box wow fadeInDown" data-wow-duration=".6s" data-wow-delay="0.6s">
+                                <a href="#none" class="btn"></a>
+                            </div>
+                            <div class="cont_box wow fadeInDown" data-wow-duration=".6s" data-wow-delay="0.8s">
+                                <div class="cont ct1_1" id="ct1_1">
+                                    <ul class="basic2 prt-board-list">
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-wrap"><img src="./img/news01.jpeg" alt="스튜디오드래곤"></div>
+                                                <div class="txt_wrap">
+                                                    <span class="date">29</span>
+                                                    <div class="ti_wrap">
+                                                        <span class="bg"></span>
+                                                        <h4 class="ti_pit">07</h4>
+                                                    </div>
+                                                    <span class="tit">스튜디오드래곤, 글로벌 진출 가속화할 신규 CI, 슬로건 공개</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-wrap"><img src="./img/news02.jpeg" alt="2030부산세계박람회"></div>
+                                                <div class="txt_wrap">
+                                                    <span class="date">25</span>
+                                                    <div class="ti_wrap">
+                                                        <span class="bg"></span>
+                                                        <h4 class="ti_pit">07</h4>
+                                                    </div>
+                                                    <span class="tit">CJ ENM, 2030부산세계박람회 유치 지원 본격 나선다</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="img-wrap"><img src="./img/news03.jpeg" alt="이미경 CJ 부회장"></div>
+                                                <div class="txt_wrap">
+                                                    <span class="date">20</span>
+                                                    <div class="ti_wrap">
+                                                        <span class="bg"></span>
+                                                        <h4 class="ti_pit">07</h4>
+                                                    </div>
+                                                    <span class="tit">이미경 CJ 부회장, 국제 에미상 공로상 수상</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--sec3 e-->
+                
+                <!--sec4 s-->
+                <div class="sec4">                    
+                    <div class="inner">
+                        <div class="cont_wrap">
+                            <div class="tit_wrap">
+                                <h3 class="tit wow fadeInUp" data-wow-duration=".6s" data-wow-delay="0.4s">Service</h3>
+                            </div>
+                            <ul class="ico_box">
+                                <li class="ico01 ico wow fadeInDown" data-wow-duration=".6s" data-wow-delay="0.4s">
+                                    <a href="#none">
+                                        <div class="ico"></div>
+                                        <p class="btn_go bt">TIVING</p>	
+                                    </a>				
+                                </li>
+                                <li class="ico02 ico wow fadeInDown" data-wow-duration=".6s" data-wow-delay="0.6s">
+                                    <a href="#none">
+                                        <div class="ico"></div>
+                                        <p class="btn_go bt">STUDIO DRAGON</p>	
+                                    </a>				
+                                </li>
+                                <li class="ico03 ico wow fadeInDown" data-wow-duration=".6s" data-wow-delay="0.8s">
+                                    <a href="#none">
+                                        <div class="ico"></div>
+                                        <p class="btn_go bt">CJ ONSTYLE</p>
+                                    </a>						
+                                </li>
+                                <li class="ico04 ico wow fadeInDown" data-wow-duration=".6s" data-wow-delay="1s">
+                                    <a href="#none">
+                                        <div class="ico"></div>
+                                        <p class="btn_go bt">CONTACT US</p>	
+                                    </a>					
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--sec4 e-->
+                
+            </div>
+            <!--main_cont e-->
+            
+            <!-- footer s -->
+            <!--include s-->
+            <link rel="stylesheet" type="text/css" href="./css/footer_basic1.css">
+            <script defer="" src="./js/footer_basic1.js"></script>
+            <!--include e-->
+
+            <footer id="footer">
+                <div class="inner">
+                    <div class="f_inform_wrap clear">
+                        <div class="link">
+                            <a href="#none" class="bold">문의하기</a>
+                            <a href="#none" class="bold">온라인 제보</a>
+                            <a href="#none" class="bold">시청자위원회</a>
+                            <a href="#none" class="bold">법적고지</a>
+                            <a href="#none" class="bold">영상정보처리기기운영/관리방침</a>
+                            <a href="#none" class="bold">이메일무단수집거부</a>
+                            <a href="#none" class="bold">개인정보처리방침</a>
+                        </div>
+                        <div class="f_inform">
+                            <div class="f_if">
+                                <div class="top">
+                                    <p class="name">(주)씨제이이엔엠</p>
+                                    <p>대표이사 : 강호성, 윤상현</p>
+                                </div>
+                                <p class="address">주소 : (03926) 서울시 마포구 상암산로 66</p>
+                                <div class="bottom">
+                                    <p class="crn">사업자 등록번호 : 106-81-51510</p>
+                                    <p class="crn">개인정보 보호책임자 : 강봉관</p>
+                                </div>
+                            </div>
+                            <div class="sns_box">
+                                <div class="sns insta">
+                                    <a href="#none" target="_blank">
+                                        <img src="./img/ham_insta_w.png" title="새창열기" alt="인스타그램" class="sns_img">
+                                        <img src="./img/ham_insta.png" title="새창열기" alt="인스타그램" class="sns_hover">
+                                    </a>
+                                </div>
+                                <div class="sns youtube">
+                                    <a href="#none" target="_blank">
+                                        <img src="./img/ham_youtube_w.png" title="새창열기" alt="인스타그램" class="sns_img">
+                                        <img src="./img/ham_youtube.png" title="새창열기" alt="유튜브" class="sns_hover">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="copy">© CJ ENM. All Rights Reserved.</div>
+                    </div>
+
+                </div>
+
+            </footer>
+            <!-- footer e -->
+        </div>
+    </div>
+</body>
+
+</html>

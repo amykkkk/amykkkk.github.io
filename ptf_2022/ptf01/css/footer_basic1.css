@@ -1,0 +1,30 @@
+
+#footer {width: 100%; padding: 50px 0; background-color: #F1F3F6;color: #888; font-family: 'Noto Sans KR', sans-serif; font-size: 14px;}
+#footer .f_logo {width: 150px; float: left;}
+#footer .f_logo img {width: 100%;}
+
+#footer .f_inform {float: left; width: calc(92% - 150px); margin-left: 8%;}
+#footer .f_inform p .bold {margin-right: 2%;font-weight: 500;}
+#footer .f_inform p {display: inline;}
+#footer .f_inform p:last-child:after {display: none;}
+#footer .f_inform .bottom {margin-top: 5px;}
+
+#footer .copy { margin-top: 20px;}
+
+
+@media screen and (max-width:768px){
+
+   #footer .f_logo {float: none;width: 100px;}
+   #footer .f_inform {float: none; width: 100%; margin-top: 30px; margin-left: 0;}
+
+   #footer .f_inform p {display: block; margin-bottom: 10px;}
+	#footer .f_inform p .bold { display:inline-block;vertical-align:top; line-height:130%;}
+   #footer .f_inform p:after {display: none;}
+   #footer .f_inform .bottom {margin-top: 0;}
+
+}
+@media screen and (max-width:500px){
+
+   #footer .f_inform p.address .txt {display: block;margin-top: 5px;}
+
+}
