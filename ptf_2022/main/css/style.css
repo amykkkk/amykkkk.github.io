@@ -358,11 +358,11 @@ h1 .eyebrow {
   z-index: -1;
 }
 .info h2:nth-of-type(2):after {
-  top: 270px;
+  top: 300px;
 }
 .info h2:nth-of-type(3):after {
   top: auto;
-  bottom: 185px;
+  bottom: 235px;
 }
 .info ul {
   font-size: 16px;
@@ -446,6 +446,9 @@ h1 .eyebrow {
 }
 .info ul.tool li:nth-child(6) .per:after {
   width: 70%;
+}
+.info ul.tool li:nth-child(n+7) .per:after {
+  width: 50%;
 }
 
 /* sec2 */
@@ -814,6 +817,8 @@ h1 .eyebrow {
 .css {background-image: url('../img/css.png');}
 .js {background-image: url('../img/js.png');}
 .fma {background-image: url('../img/figma.png');}
+.react {background-image: url('../img/react.png');}
+.next {background-image: url('../img/next.png');}
 .col {background-image: url('../img/color.png');}
 .grf {background-image: url('../img/pen.png');}
 .web {background-image: url('../img/code.png');}
