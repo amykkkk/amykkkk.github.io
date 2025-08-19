@@ -199,5 +199,14 @@ $(document).ready(function(){
     });
 
 
+    // popup Open
+    window.fnPopOpen = function (name) {
+        $(`.shadow.popup, #popup, #popup .${name}`).fadeIn().stop().animate({opacity: 1}, 500);
+    }
+    // 팝업 닫기 popup close
+    $('.shadow.popup, #popup').click(function () {
+        $('.shadow.popup, #popup, #popup img').fadeOut().animate({'opacity': 0}, 1000);
+    });
+
 
 });
