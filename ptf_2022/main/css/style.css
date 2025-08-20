@@ -785,6 +785,10 @@ h1 .eyebrow {
   display: none;
   padding-top: 50px;
 }
+.staggered .item_box.open ~ .thumb {
+  visibility:visible;
+}
+
 .staggered .thumb img {width: 60%;}
 .staggered .thumb_txt {
   display: inline-block;
@@ -819,6 +823,8 @@ h1 .eyebrow {
 .fma {background-image: url('../img/figma.png');}
 .react {background-image: url('../img/react.png');}
 .next {background-image: url('../img/next.png');}
+.php {background-image: url('../img/php.png');}
+.ts {background-image: url('../img/ts.png');}
 .col {background-image: url('../img/color.png');}
 .grf {background-image: url('../img/pen.png');}
 .web {background-image: url('../img/code.png');}
