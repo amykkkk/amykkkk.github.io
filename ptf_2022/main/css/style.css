@@ -335,15 +335,15 @@ h1 .eyebrow {
   margin-top: 50px;
 }
 .info h2 {
+  position: relative;
   font-size: var(--step-1);
   font-weight: 500;
   text-transform: capitalize;
   text-align: left;
   color: #b74946;
-  width: fit-content;
+  width: 100%;
   background: #e1ddd8;
-  margin-left: 80px;
-  padding: 0 20px;
+  padding: 0 80px;
 }
 .info h2::after {
   content: "";
@@ -351,18 +351,19 @@ h1 .eyebrow {
   width: 100%;
   height: 20px;
   position: absolute;
-  top: 16px;
+  top: 50%;
   right: 0;
   border-radius: 20px;
   border-top: 1px solid #333333;
-  z-index: -1;
 }
-.info h2:nth-of-type(2):after {
-  top: 300px;
+.info h2 span{
+  position: relative;
+  z-index: 1;
+  background: #e1ddd8;
+  padding: 0 20px;
 }
-.info h2:nth-of-type(3):after {
-  top: auto;
-  bottom: 235px;
+.info h2:nth-of-type(1) span {
+  background: #d6d2cd;
 }
 .info ul {
   font-size: 16px;
@@ -791,14 +792,21 @@ h1 .eyebrow {
 
 .staggered .thumb img {width: 60%;}
 .staggered .thumb_txt {
-  display: inline-block;
+  display: flex;
   float: right;
   position: relative;
   width: 35%;
+  height: 30vw;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.staggered .thumb_txt .dec {
+  flex: 1;
 }
 .staggered .thumb_txt .ti {
   font-weight: bold;
-  margin: 40% 0 10px;
+  margin-bottom: 10px;
 }
 .staggered .thumb_txt .pt {
   width: 70px;
@@ -1115,12 +1123,6 @@ h1 .eyebrow {
     justify-content: space-evenly;
     align-items: flex-start;
   }
-  .info h2:nth-of-type(2):after {
-    top: 428px;
-  }
-  .info h2:nth-of-type(3):after {
-    bottom: 148px;
-  }
   .info .education p {
     width: 100%;
   }
@@ -1218,9 +1220,6 @@ h1 .eyebrow {
   .br_m {display: block;}
   .info ul {
     padding: 20px 10px;
-  }
-  .info h2:nth-of-type(3):after {
-    bottom: 257px;
   }
   .info ul.certificate li:nth-child(n+3):nth-child(-n+4) {
     width: calc(50% - 30px);
