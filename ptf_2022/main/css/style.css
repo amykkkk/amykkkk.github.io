@@ -73,6 +73,18 @@ a {
   display: block;
 }
 .br_m {display: none;}
+.clear {
+  clear: both;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
 
 @media screen and (min-width: 1140px) {
   :root {
@@ -796,7 +808,7 @@ h1 .eyebrow {
   float: right;
   position: relative;
   width: 35%;
-  height: 30vw;
+  min-height: 30vw;
   flex-direction: column;
   justify-content: space-between;
 
@@ -806,7 +818,7 @@ h1 .eyebrow {
 }
 .staggered .thumb_txt .ti {
   font-weight: bold;
-  margin-bottom: 10px;
+  padding: 10px 0;
 }
 .staggered .thumb_txt .pt {
   width: 70px;
@@ -1081,9 +1093,6 @@ h1 .eyebrow {
   .bars .bars-cont {
     height: 20vh;
   }
-  .staggered .thumb_txt .ti {
-    margin: 6vw 0 10px;
-  }
   .parallax-text .slogan {
     padding-left: 100px;
   }
@@ -1198,11 +1207,12 @@ h1 .eyebrow {
   .staggered .thumb_txt {
     float: none;
     width: 100%;
+    min-height: 0;
     margin-top: 20px;
     font-size: 14px;
   }
   .staggered .thumb_txt .ti {
-    margin: 30px 0 10px;
+    padding: 30px 0 10px;
   }
   .parallax-images .parallax-text {
     grid-template-columns: repeat(1, 1fr);
