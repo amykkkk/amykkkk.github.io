@@ -356,7 +356,7 @@ h1 .eyebrow {
   border-radius: 20px;
   border-top: 1px solid #333333;
 }
-.info h2 span{
+.info h2 span {
   position: relative;
   z-index: 1;
   background: #e1ddd8;
@@ -1108,7 +1108,10 @@ h1 .eyebrow {
   }
   .info h2 {
     font-size: 18px;
-    margin-left: 30px;
+    padding: 0 20px;
+  }
+  .info h2 span {
+    padding: 0 10px;
   }
   .info ul,
   .info small,
@@ -1116,7 +1119,7 @@ h1 .eyebrow {
     font-size: 14px;
   }
   .info .education li {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     margin-bottom: 20px;
     flex-direction: column;
     align-content: space-between;
