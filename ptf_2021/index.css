@@ -7,8 +7,8 @@ body {min-width:1900px;}
 .preload p:nth-child(1) {text-align:left;}
 .preload p:nth-child(2) {text-align:right;padding-top:200px;}
 
-.preload h1 {position:absolute;top:45%;left:200px;}
-.preload h2 {position:absolute;top:47%;left:200px;}
+.preload h1 {position:absolute;top:410px;left:200px;}
+.preload h2 {position:absolute;top:425px;left:200px;}
 
 .bar {display:table-cell;vertical-align:middle;}
 .bar strong {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:50px;}
@@ -28,8 +28,8 @@ header.on .menu {width:100%;height:100vh;background:#f2f2f2;}
 header .menu:before {content:"";display:block;width:5px;height:100%;background:#17269d;position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:-1;}
 
 header .menu a {display:block;font-family: 'Abril Fatface', cursive;width:500px;line-height:100px;margin:10px auto;}
-header .menu a:nth-child(-n+2) {padding-right:0;margin:50px auto 50px auto;line-height:30px;font-size:24px;text-transform:uppercase;background:#f2f2f2;}
-
+header .menu a:first-child {padding-right:0;margin:50px auto 50px auto;line-height:30px;font-size:24px;text-transform:uppercase;background:#f2f2f2;}
+header .menu a:last-child {padding-right:0;margin:50px auto 0 auto;line-height:30px;font-size:24px;text-transform:uppercase;background:#f2f2f2;}
 header .menu a:hover {color:#17269d;}
 
 header .menu p {float:left;width:200px;}
@@ -352,7 +352,8 @@ footer {position:fixed;bottom:30px;right:50px;color:#999;font-weight:300;font-si
     header.on .menu {width:100%;height:100vh;background:#f2f2f2;}
     header .menu:before {content:"";display:block;width:2px;height:100%;background:#17269d;position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:-1;}
     header .menu a {display:block;font-family: 'Abril Fatface', cursive;width:100%;line-height:50px;margin:5px auto;}
-    header .menu a:nth-child(-n+2) {padding:0;margin:50px auto 20px auto;line-height:30px;font-size:20px;text-transform:uppercase;background:#f2f2f2;}
+    header .menu a:first-child {padding:0;margin:100px auto 20px auto;line-height:30px;font-size:20px;text-transform:uppercase;background:#f2f2f2;}
+    header .menu a:last-child {padding:0;margin:20px auto 0 auto;line-height:30px;font-size:20px;text-transform:uppercase;background:#f2f2f2;}
     header .menu a:hover {color:#17269d;}
     
     header .menu p {float:left;width:calc(50% - 25px);font-size:12px;}

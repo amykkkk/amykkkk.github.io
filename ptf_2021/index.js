@@ -20,28 +20,34 @@ $(function(){
     const sIt=$(".section");
     const ssIt=$(".slide");
     $("#portfolio").fullpage({
-        anchors:['introX', 'profileX', 'ptf'],
+        anchors:['introX', 'ptf', 'profileX'],
         controlArrows: false, 
         loopHorizontal: false, 
-        afterLoad: function(o,d){
-            if(d.index==1) {
+
+        afterLoad: function(anchorLink, index){
+            if(index == 2) {
                 ssIt.first().addClass("on");
                 ssIt.last().addClass("on");
-            }else{
+            } else {
                 ssIt.removeClass("on");
             }
-            sIt.eq(d.index).addClass("on").siblings().removeClass("on");
+            sIt.eq(index - 1).addClass("on").siblings().removeClass("on");
         },
-        afterSlideLoad: function(s,o,d,r) {
-            ssIt.eq(d.index).addClass("on").siblings().removeClass("on");
+        
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+            ssIt.eq(slideIndex).addClass("on").siblings().removeClass("on");
         }
     });
 
 
     // scroll-right
     $(".main").on("mousewheel", function(e){
-        let Whl=e.originalEvent.wheelDelta;
-        Whl>0 ? fullpage_api.moveSlideLeft() : fullpage_api.moveSlideRight();
+        var Whl = e.originalEvent.wheelDelta;
+        if (Whl > 0) {
+            $.fn.fullpage.moveSlideLeft();
+        } else {
+            $.fn.fullpage.moveSlideRight();
+        }
     });
     
     //menu
