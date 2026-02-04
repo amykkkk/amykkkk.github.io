@@ -460,7 +460,10 @@ h1 .eyebrow {
 .info ul.tool li:nth-child(6) .per:after {
   width: 70%;
 }
-.info ul.tool li:nth-child(n+7) .per:after {
+.info ul.tool li:nth-child(7) .per:after {
+  width: 70%;
+}
+.info ul.tool li:nth-child(8) .per:after {
   width: 50%;
 }
 
@@ -540,13 +543,12 @@ h1 .eyebrow {
 }
 .button {
   display: block;
-  position: absolute;
-  top: -50px;
-  right: 0;
+  position: relative;
   width: 100px;
   height: 50px;
   text-align: center;
   line-height: 50px;
+  margin-top: 30px;
 }
 .button::before {
   position: absolute;
@@ -585,11 +587,6 @@ h1 .eyebrow {
   display: block;
   transition: transform 0.3s ease;
   mix-blend-mode: difference;
-}
-.staggered .button {
-  top: auto;
-  bottom: 0;
-  z-index: 1;
 }
 
 .img_wrap {
@@ -810,11 +807,8 @@ h1 .eyebrow {
   width: 35%;
   min-height: 30vw;
   flex-direction: column;
-  justify-content: space-between;
-
-}
-.staggered .thumb_txt .dec {
-  flex: 1;
+  justify-content: flex-start;
+  gap:10px;
 }
 .staggered .thumb_txt .ti {
   font-weight: bold;
@@ -852,6 +846,11 @@ h1 .eyebrow {
 .fc {background-image: url('../img/fashion_com.png');}
 .dr {background-image: url('../img/drive.png');}
 .ex {background-image: url('../img/excel.png');}
+.tailwind {background-image: url('../img/tailwind.svg');}
+.vercel {background-image: url('../img/vercel.png');}
+.supabase {background-image: url('../img/supabase.png');}
+.sass {background-image: url('../img/sass.png');}
+.tanstack {background-image: url('../img/tanstack.png');}
 
 .parallax-images {min-height: 100vh;}
 .parallax-images .parallax-text {
@@ -1181,9 +1180,6 @@ h1 .eyebrow {
   .bar-slide .tit {
     font-size: 30px;
     margin-bottom: 20px;
-  }
-  .button {
-    top: 0;
   }
   .staggered #split-stagger::before {
     background-size: cover;
